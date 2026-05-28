@@ -1,0 +1,76 @@
+/* --- FORMULARIO DE CONTACTO (PÁGINA 1) --- */
+header.contacto-header {
+    background-color: var(--color-accent);
+    color: var(--color-primario);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+fieldset {
+    border: 1px solid var(--color-secundario);
+    padding: 15px;
+    border-radius: 6px;
+}
+
+legend {
+    font-family: "Libre Baskerville", serif;
+    color: var(--color-secundario);
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 1.1em;
+}
+
+label {
+    font-family: "Libre Baskerville", serif;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    background-color: var(--color-accent);
+    color: var(--color-primario);
+    border-radius: 4px;
+    font-size: 1.2em;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid var(--color-secundario);
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+form button {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 20px;
+    width: 100%;
+    background-color: var(--color-secundario);
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+}

@@ -1,0 +1,37 @@
+@import '../CSS/variables.css';
+@import '../CSS/nav.css';
+@import '../CSS/cabecera.css';
+@import '../CSS/secciones.css';
+@import '../CSS/form.css';
+@import '../CSS/footer.css';
+
+/* Reseteo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-primario); /* Por defecto texto claro sobre el fondo oscuro */
+    background-image: linear-gradient(rgba(34, 41, 47, 0.5), rgba(34, 41, 47, 0.5)), url(../img/bg_verde.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

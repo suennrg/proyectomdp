@@ -1,0 +1,8 @@
+/* Definir variables de colores */
+:root {
+   --color-primario: #f2f2f2;
+   --color-secundario: #10b981ce;
+   --color-fondo: #22292f;
+   --color-texto: #1a1a1a;
+   --color-accent: #151819;
+}

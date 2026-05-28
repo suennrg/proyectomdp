@@ -1,0 +1,10 @@
+/* --- FOOTER --- */
+footer {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-accent);
+    color: var(--color-primario);
+    margin-top: 40px;
+    font-size: 0.9em;
+}

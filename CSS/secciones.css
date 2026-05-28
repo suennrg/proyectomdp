@@ -1,0 +1,122 @@
+/* --- SECCIONES GENERALES --- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+section {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    padding: 50px 20px; /* Cambiado de height fijo a padding para que respire el contenido */
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.05); /* Un fondo sutil para las secciones oscuras */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.3em;
+    color: var(--color-secundario);
+    
+}
+
+section p {
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    max-width: 800px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Subsecciones internas */
+section section {
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    padding: 20px 0;
+    margin-bottom: 0;
+}
+
+/* --- SECCIÓN NUESTROS DADOS (Lista de Definición) --- */
+.tiposDados dl {
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.tiposDados dt {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: var(--color-secundario);
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+.tiposDados dt:first-child {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 0;
+}
+
+.tiposDados dd {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 15px;
+    margin-top: 5px;
+    color: var(--color-primario);
+    opacity: 0.9;
+}
+
+/* --- GALERÍA --- */
+.galeria div {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+.galeria article {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 25px 20px;
+    border-radius: 8px;
+    border: 1px dashed var(--color-secundario);
+    width: 100%;
+    max-width: 800px;
+}
+
+.galeria article h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+
+}
+
+.dadoProyecto{
+    margin-top: 20px;
+}

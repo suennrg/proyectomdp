@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/estilos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"/>
+
+    <title>Mago de papel - Contacto</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <!-- Para anclar a la página de inicio y la sección correspondiente
+         "nombredelapga.html#seccion" -->
+        <li><a href="indexmdp.html#inicio">Inicio</a></li>
+        <li><a href="indexmdp.html#quienesSomos">Quiénes somos</a></li>
+        <li><a href="indexmdp.html#nuestrosDados">Nuestros dados</a></li>
+        <li><a href="indexmdp.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <header class="inicio">
+      <h1>¿En qué podemos guiarte, aventurer@?</h1>
+      <h2>
+        Cuéntanos tu historia y diseñemos junt@s tus dados para la siguiente
+        campaña.
+      </h2>
+    </header>
+
+    <main>
+      <form action="/enviar" method="post">
+        <fieldset>
+          <legend>Contacta con nosotros/as</legend>
+
+          <label for="nombre">Nombre * :</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            required
+            placeholder="Tu nombre de aventurero/a"
+          />
+
+          <label for="correo">Correo electrónico * :</label>
+          <input
+            type="email"
+            name="correo"
+            id="correo"
+            required
+            placeholder="tu@correo.com"
+          />
+
+          <label for="comentarios">Mensaje / Inspiración:</label>
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            placeholder="¿Cómo te imaginas tu d20 perfecto?"
+          ></textarea>
+
+          <button type="submit">Enviar Formulario</button>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer>Mago de Papel © 2026 | contacto@magodepapel.com</footer>
+  </body>
+</html>

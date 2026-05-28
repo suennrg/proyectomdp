@@ -1,0 +1,103 @@
+/* --- CABECERA (HERO) --- */
+header.inicio {
+    background-color: var(--color-primario);
+    padding: 60px 20px;
+    text-align: center;
+    width: 100%;
+    min-height: 94vh; /* min-height es mejor que height fijo para evitar desbordamientos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--color-primario);
+    background-image: linear-gradient(rgba(34, 41, 47, 0.8), rgba(34, 41, 47, 0.8)), url(../img/bg-partida2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Aplica esto a todos los textos dentro de la cabecera */
+header.inicio h1, 
+header.inicio h2, 
+header.inicio p {
+    /* sombra-x sombra-y radio-desenfoque color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+header.inicio h1 {
+    color: var(--color-secundario);
+    /* Una sombra un poco más difusa para el título grande */
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+header h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3.5em;
+    color: var(--color-secundario);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    word-break: break-all;
+}
+
+header h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5em;
+    font-style: italic;
+    max-width: 700px;
+}
+
+.comoHacemos h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.8em;               /* Tamaño intermedio ideal para un subtítulo */
+    color: var(--color-primario);   /* Color claro para que contraste */
+    margin-bottom: 10px;            /* Espacio respecto al párrafo de abajo */
+    text-transform: uppercase;      /* Texto en mayúsculas para darle un toque más imponente */
+    letter-spacing: 1px;            /* Un pequeño espacio entre letras para mejorar la legibilidad */
+    position: relative;             /* Lo preparamos para añadirle un adorno visual */
+    display: inline-block;          /* Hace que el contenedor se ajuste solo al texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Un adorno visual: una línea rosa sutil debajo del subtítulo */
+.comoHacemos h3::after {
+    content: '';
+    display: block;
+    width: 60%;                     /* La línea ocupará el 60% del ancho del texto */
+    height: 3px;                    /* Grosor de la línea */
+    background-color: var(--color-secundario); /* Tu rosa característico */
+    margin: 8px auto 0 auto;        /* Centra la línea y la separa del texto */
+    border-radius: 2px;
+}
+
+header p {
+    font-family: "Montserrat", sans-serif;
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* --- ESTILADO DE BOTONES GENERALES --- */
+button {
+    font-family: "Montserrat", sans-serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header button a, .contacto button a, form button {
+    display: inline-block;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--color-primario);
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+header button a:hover, .contacto button a:hover, form button:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    transform: scale(1.05);
+}

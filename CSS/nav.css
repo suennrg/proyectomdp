@@ -1,0 +1,45 @@
+/* --- NAVEGACIÓN --- */
+nav {
+    background-color: var(--color-secundario);
+    padding: 10px 15px;
+    min-height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-image: url(../img/bg_verde.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1000; /* Asegura que quede por encima de las imágenes */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+}
+
+nav ul li a {
+    font-family: "Montserrat", sans-serif;
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--color-accent);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.95em;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+
